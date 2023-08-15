@@ -1,0 +1,11 @@
+/* static/css/styles.css */
+.custom-container {
+    margin-top: 300px;
+    background-color: #f7f7f7;
+}
+
+.navbar-brand img {
+    max-height: 100px; 
+    vertical-align: middle;
+    width: auto;
+}

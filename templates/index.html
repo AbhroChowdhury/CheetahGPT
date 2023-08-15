@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Flask Bootstrap Website</title>
+    <title>MultiServe.AI</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">MultiServe.AI</a>
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='images/MultiServeAI-logos_transparent.png') }}" alt="MultiServe.AI" class="img-fluid">
+        </a>        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,7 +34,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container custom-container">
         <h1>Welcome to MultiServe.AI</h1>
         <p>MultiServe.AI is a full stack application that allows you to use AI on a variety of structured and unstructured data sources such as YouTube, reddit, excel, and more!</p>
     </div>
