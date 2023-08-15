@@ -13,13 +13,13 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="{{ url_for('static', filename='images/MultiServeAI-logos_transparent.png') }}" alt="MultiServe.AI" class="img-fluid">
+            <img src="{{ url_for('static', filename='images/MultiServeAI-logos_white.png') }}" alt="MultiServe.AI" class="img-fluid">
         </a>        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -41,7 +41,16 @@
 
     <div class="container custom-container">
         <h1>Welcome to MultiServe.AI</h1>
-        <p>MultiServe.AI is a full stack application that allows you to use AI on a variety of structured and unstructured data sources such as YouTube, reddit, excel, and more!</p>
+        <h5>MultiServe.AI lets you leverage AI on a variety of structured and unstructured data sources such as YouTube, Reddit, CSV's, and more!</h5>
     </div>
+
+    <div class="container info-container">
+        <p>We all know of ChatGPT by now, however one of its biggest limitations is the scope of its training data. Say you're a student who wants to see what
+            other students think about a certain professor; Unfortunately, ChatGPT will not be able to help you with that. Reddit-GPT on the other hand, can! 
+            By parsing through posts of your universities subreddit and temporarily adding it to the existing training data, Reddit-GPT can quickly answer high-level 
+            questions such as the aforementioned. 
+        </p>
+    </div>
+
 </body>
 </html>
