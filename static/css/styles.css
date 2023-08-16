@@ -31,7 +31,7 @@ body {
     left: 0;
     width: 100%;
     background-size: 300% 300%;
-    background-image: linear-gradient(-45deg, #FAC1AE, #F59777, #FD784A, #ff357f 100%);
+    background-image: linear-gradient(-45deg, #FFBA86, #F6635C, #C23373, #79155B 100%);
     -webkit-animation: AnimateBG 20s ease infinite;
     animation: AnimateBG 20s ease infinite;
     z-index: -1;
@@ -90,7 +90,7 @@ h1 {
 }
 
 h5 {
-    color: #FAE059;
+    color:#FFF4A3;
     font-style: italic;
 }
 
@@ -113,7 +113,7 @@ p, a, li, span {
     margin-right: 20px; 
 }
 .navbar-nav.ml-auto .nav-item .nav-link {
-    color: #FAE059 ; 
+    color:#FFF4A3;
     transition: color 0.3s; 
     font-size: 20px;
 }
@@ -177,7 +177,7 @@ p, a, li, span {
 .how-container h1 {
     font-size: 36px;
     font-weight: 600;
-    color: #FAE059;
+    color:#FFF4A3;
     margin-top: 200px;
     margin-bottom: 200px;
     margin-right: 85px;
@@ -187,5 +187,6 @@ p, a, li, span {
 .how-container p {
     font-size: 18px;
     line-height: 1.6;
-    color: #323230;
+    color: white;
+    font-weight: bold;
 }
