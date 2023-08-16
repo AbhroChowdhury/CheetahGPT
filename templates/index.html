@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CheetahGPT</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </head>
 
 
@@ -131,36 +134,32 @@
 
     <div class="container faq-container">
         <nav id="navbarfaq" class="navbar bg-body-tertiary px-3 mb-3">
-            <h4 style="margin-top: 6px;">Navbar</h4>
-            <ul class="nav navfaq-pills">
-              <li class="navfaq-item">
-                <a class="navfaq-link" href="#scrollspyHeading1">First</a>
-              </li>
-              <li class="navfaq-item">
-                <a class="navfaq-link" href="#scrollspyHeading2">Second</a>
-              </li>
-              <li class="navfaq-item dropdown">
-                <a class="navfaq-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-                  <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-                </ul>
-              </li>
-            </ul>
+            <h4 style="margin-top: 6px;">FAQ</h4>
           </nav>
           <div data-bs-spy="scroll" data-bs-target="#navbarfaq" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-            <h4 id="scrollspyHeading1">First heading</h4>
-            <p>...</p>
-            <h4 id="scrollspyHeading2">Second heading</h4>
-            <p>...</p>
-            <h4 id="scrollspyHeading3">Third heading</h4>
-            <p>...</p>
-            <h4 id="scrollspyHeading4">Fourth heading</h4>
-            <p>...</p>
-            <h4 id="scrollspyHeading5">Fifth heading</h4>
-            <p>...</p>
+            <h4 id="scrollspyHeading1">Does CheetahGPT store my data?</h4>
+            <p>Rest assured, CheetahGPT prioritizes your privacy. We do not retain any of your data. Once you refresh the page, any documents or CSV files you upload are promptly cleared. 
+                CheetahGPT is built to offer a seamless and efficient experience, and to ensure this, we have deliberately omitted user-authentication and data storage functionalities.
+                Your data privacy is our utmost concern.
+            </p>
+            <h4 id="scrollspyHeading2">Is CheetahGPT 100% accurate?</h4>
+            <p>
+                Like all AI systems, CheetahGPT operates within the realm of probability and is not infallible; CheetahGPT runs with OpenAI's GPT-3.5-Turbo model, and so you can expect similar performance to ChatGPT. While it strives to provide accurate and valuable information, 
+                there may be instances where the generated content could vary in accuracy. We continually work to enhance its capabilities and refine its responses, 
+                but it's important to exercise critical judgment and verify information when making decisions based on CheetahGPT's output. Your experience with CheetahGPT's accuracy may vary depending on the complexity and context of the queries.
+            </p>
+            <h4 id="scrollspyHeading3">How does CheetahGPT work under the hood?</h4>
+            <p>CheetahGPT utilizes several python pacakges to achieve its core functionalities. Primarily, CheetahGPT makes use of LangChain and LlamaIndex. Different features are created differently, however the logic is usually the same;
+                For Reddit-GPT, Wiki-GPT, and Youtube-GPT, the program will first narrow down the potential dataset, before indexing it and preparing it for use with the chat engine. Document-GPT and CSV-GPT are even simpler as they take  the uploaded file,
+                and immediately index it. For in-depth discussion about the technical aspects, reach out to Abhro Chowdhury at abhrajyo@ualberta.ca
+            </p>
+            <h4 id="scrollspyHeading4">Will CheetahGPT include a paid plan?</h4>
+            <p>
+                Every time a feature is utilized, it incurs usage fees for the OpenAI API. In the process of incorporating new data into the GPT-3.5-Turbo model, an embedding step with Ada V2 from OpenAI is necessary. Additionally, each chat request carries its own cost. 
+                Consequently, should CheetahGPT experience substantial demand, we may introduce a paid model to ensure that its operation remains sustainable and avoids running at a deficit. 
+            </p>
+            <h4 id="scrollspyHeading5">Will CheetahGPT get new data connectors?</h4>
+            <p>Yes! We have plans to integrate even more data connectors soon. We are currently working on a Twitter-GPT, and an Image-GPT; If you have any suggestions, please reach out!</p>
           </div>
     </div>
     

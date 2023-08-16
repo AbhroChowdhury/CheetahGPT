@@ -267,3 +267,11 @@ p, a, li, span {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.white-link {
+    color: white !important;
+}
+
+.custom-navfaq .navfaq-item {
+    margin-right: 15px; /* Adjust the value as needed */
+}
