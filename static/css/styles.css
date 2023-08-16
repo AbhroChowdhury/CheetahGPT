@@ -31,7 +31,7 @@ body {
     left: 0;
     width: 100%;
     background-size: 300% 300%;
-    background-image: linear-gradient(-45deg, #FFBA86, #F6635C, #C23373, #79155B 100%);
+    background-image: linear-gradient(-45deg, white, white, white, white 100%);
     -webkit-animation: AnimateBG 20s ease infinite;
     animation: AnimateBG 20s ease infinite;
     z-index: -1;
@@ -63,7 +63,7 @@ body {
 
 .custom-container {
     margin-top: 75px;
-    background-color: rgba(200, 200, 200, 0.2); 
+    background-color: #FFF6F4; 
     padding: 20px;
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
@@ -87,39 +87,47 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 45px;
     font-weight: 600;
+    color: #525FE1;
+}
+
+h3 {
+    color:#F86F03;
+    font-style: italic;
+    font-size: 15px;
 }
 
 h5 {
-    color:#FFF4A3;
+    color:#F86F03;
     font-style: italic;
 }
 
 h4 {
-    color:#ff357f;
+    color:#F86F03;
     font-weight:bolder;
 }
 
 p, a, li, span {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 18px;
+    color: #272E72;
 }
 
 
 .navbar {
-    background-color: #2F2C2A !important; 
+    background-color: #272E72 !important; 
 }
 
 .navbar-nav.ml-auto .nav-item {
     margin-right: 20px; 
 }
 .navbar-nav.ml-auto .nav-item .nav-link {
-    color:#FFF4A3;
+    color:#EDF1D6;
     transition: color 0.3s; 
     font-size: 20px;
 }
 
 .navbar-nav.ml-auto .nav-item .nav-link:hover {
-    color: #FFA57B; 
+    color: #F29727; 
 }
 
 .main-container {
@@ -150,6 +158,7 @@ p, a, li, span {
     border: none; 
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #FFF6F4;
 }
 
 .card:hover {
@@ -160,7 +169,7 @@ p, a, li, span {
 
 .footer {
     margin-top: 60px;
-    background-color: #474341;
+    background-color: #272E72;
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
@@ -169,7 +178,7 @@ p, a, li, span {
 .how-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: rgba(200, 200, 200, 0.2);
+    background-color: #F2F3FF;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -177,7 +186,7 @@ p, a, li, span {
 .how-container h1 {
     font-size: 36px;
     font-weight: 600;
-    color:#FFF4A3;
+    color:#F86F03;
     margin-top: 200px;
     margin-bottom: 200px;
     margin-right: 85px;
@@ -187,24 +196,24 @@ p, a, li, span {
 .how-container p {
     font-size: 18px;
     line-height: 1.6;
-    color: white;
+    color: #525FE1;
     font-weight: bold;
 }
 
 .visuals-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: rgba(200, 200, 200, 0.2);
+    background-color: #F2F3FF;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
 }
 
 .visuals-title {
     font-size: 36px;
     font-weight: 600;
-    color:#FFF4A3;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    color:#525FE1;
+    margin-top: 150px;
     margin-right: 85px;
     margin-left: 85px;
 }

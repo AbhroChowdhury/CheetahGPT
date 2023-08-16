@@ -15,7 +15,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="{{ url_for('static', filename='images/cheetahGPT1.png') }}" alt="CheetahGPT" class="img-fluid">
+            <img src="{{ url_for('static', filename='images/CheetahGPT-logos_white.png') }}" alt="CheetahGPT" class="img-fluid">
         </a>        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,19 @@
 
     <div class="container custom-container">
         <h1>Welcome to CheetahGPT</h1>
-        <h5>CheetahGPT lets you leverage AI on a variety of structured and unstructured data sources such as YouTube, Reddit, CSV's, and more!</h5>
+        <h5>CheetahGPT lets you leverage AI on a variety of structured and unstructured data sources such as YouTube, Reddit, CSV's, and more</h5>
+    </div>
+
+    <div class="container visuals-container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h1 class="visuals-title">Accelerate Your Learning!</h1>
+                <!-- <h3>Turbocharge your learning with CheetahGPT, and explore new horizons faster than ever</h3> -->
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/visual3.avif') }}" alt="Visual Image" class="visuals-image">
+            </div>
+        </div>
     </div>
 
 
@@ -100,9 +112,6 @@
     <div class="container how-container">
         <div class="row">
             <div class="col-md-6">
-                <h1>What is CheetahGPT?</h1>
-            </div>
-            <div class="col-md-6">
                 <p class="how-description">
                     Welcome to CheetahGPT – your doorway to a smarter, easier way of learning and embracing AI in your daily life. Picture yourself sprinting through a vast realm of knowledge, mirroring the swiftness of a cheetah in action. 
                     CheetahGPT is all about giving you 
@@ -114,28 +123,19 @@
                     but incredibly rewarding. Step into a brighter future of learning with CheetahGPT and let AI drive you toward new horizons.
                 </p>
             </div>
+            <div class="col-md-6">
+                <h1>Why use CheetahGPT?</h1>
+            </div>
         </div>
     </div>
 
-    <div class="container visuals-container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1 class="visuals-title">Accelerate Your Learning!</h1>
-                <p>Turbocharge your learning with CheetahGPT, and explore new horizons faster than ever!</p>
-            </div>
-            <div class="col-md-6">
-                <img src="{{ url_for('static', filename='images/visual1.avif') }}" alt="Visual Image" class="visuals-image">
-            </div>
-        </div>
-    </div>
-    
-    
+
 
 </body>
 
 <footer class="footer">
     <div class="container">
-        <p>&copy; 2023 CheetahGPT. All rights reserved.</p>
+        <h3>&copy; 2023 CheetahGPT. All rights reserved.</h3>
     </div>
 </footer>
 </div>
