@@ -20,17 +20,21 @@ body {
 
 */
 
+.main-content {
+    overflow-y: auto;
+    position: relative;
+    min-height: 100vh; 
+}
+
 .animated-background {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background-size: 300% 300%;
     background-image: linear-gradient(-45deg, #FAC1AE, #F59777, #FD784A, #ff357f 100%);
     -webkit-animation: AnimateBG 20s ease infinite;
-            animation: AnimateBG 20s ease infinite;
-    z-index: -1; /* Set a lower z-index so that it's behind other content */
+    animation: AnimateBG 20s ease infinite;
+    z-index: -1;
 }
 
 @-webkit-keyframes AnimateBG {
@@ -82,10 +86,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 45px;
+    font-weight: 600;
 }
 
 h5 {
-    color: #FAE059
+    color: #FAE059;
+    font-style: italic;
+}
+
+h4 {
+    color:#ff357f;
+    font-weight:bolder;
 }
 
 p, a, li, span {
@@ -110,27 +121,55 @@ p, a, li, span {
 .navbar-nav.ml-auto .nav-item .nav-link:hover {
     color: #FFA57B; 
 }
-.info-container {
-    color: #323230;
-    width: 980px !important; 
-    height: 500px; 
-    background-color: rgba(200, 200, 200, 0.2); 
-    padding: 20px; 
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); 
-}
 
-/* Style the common parent container */
 .main-container {
     display: flex;
     
 }
 
-/* Style the card group */
+
+.info-container {
+    color: #323230;
+    max-width: 980px; /* Set max-width to limit container width */
+    background-color: rgba(200, 200, 200, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-right: 20px; /* Add right margin for separation */
+}
+
 .card-group {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 20px;
+    margin-right: 20px; /* Add right margin for separation */
+    flex-wrap: wrap; /* Allow cards to wrap if needed */
 }
+
+.col {
+    flex: 0 0 calc(50% - 20px); /* Adjust column width and spacing */
+    margin: 10px;
+}
+
+
+.card {
+    margin-bottom: 20px;
+    border: none; 
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+.footer {
+    margin-top: 60px;
+    background-color: #474341;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
