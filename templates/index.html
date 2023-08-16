@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MultiServe.AI</title>
+        <title>CheetahGPT</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="{{ url_for('static', filename='images/MultiServeAI-logos_white.png') }}" alt="MultiServe.AI" class="img-fluid">
+            <img src="{{ url_for('static', filename='images/MultiServeAI-logos_white.png') }}" alt="CheetahGPT" class="img-fluid">
         </a>        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,27 +45,21 @@
     </nav>
 
     <div class="container custom-container">
-        <h1>Welcome to MultiServe.AI</h1>
-        <h5>MultiServe.AI lets you leverage AI on a variety of structured and unstructured data sources such as YouTube, Reddit, CSV's, and more!</h5>
+        <h1>Welcome to CheetahGPT</h1>
+        <h5>CheetahGPT lets you leverage AI on a variety of structured and unstructured data sources such as YouTube, Reddit, CSV's, and more!</h5>
     </div>
 
 
     <div class="container main-container">
-        <div class="container info-container">
-            <p>We all know of ChatGPT by now, however one of its biggest limitations is the scope of its training data. While the sheer amount of training data that ChatGPT was built on 
-                is incredibly large, it does not include personal files/datasets. Neither does it include new youtube videos, new reddit posts, new wikipedia pages, or anything that is being constantly updated.
-                MultiServe.AI is here to precisely fill in that gap of knowledge; By giving AI modles access to specific data related to your situation, you can leverage the power of AI to maximize your efficiency
-                and get insights quicker.
-            </p>
-        </div>
-
         <div class="card-group">
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Reddit-GPT</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Pick a subreddit, some keywords, and Reddit-GPT will add all posts within that criteria to its knowledge base. Scrolling through countless replies and posts
+                                to find the answer you're looking for is now a thing of the past!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -73,7 +67,9 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Youtube-GPT</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Paste the link of any video you want; Youtube-GPT will create a transcript of it, and add it to its knowledge base. Want to clarify something you saw
+                                in a video, or gain further insights on it? Look no further!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -81,7 +77,9 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Wiki-GPT</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text">Pick some keywords, and Wiki-GPT will find those subsequent wikiepdia pages and add them to its knowledge base. Want to learn about something recent that
+                                happened in the past two years? Wiki-GPT will be able to help you!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -89,20 +87,33 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">And More!</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Have an Excel file/CSV that you'd like to use AI on? Or what about a document? CheetahGPT has the functionality to let you work with both! We are constantly 
+                                working to add new data connections; Stay tuned for new releases!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+
+    <div class="container how-container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>How does it work?</h1>
+            </div>
+            <div class="col-md-6">
+                <p>The goal behind CheetahGPT</p>
+            </div>
+        </div>
+    </div>
+    
 
 </body>
 
 <footer class="footer">
     <div class="container">
-        <p>&copy; 2023 MultiServe.AI. All rights reserved.</p>
+        <p>&copy; 2023 CheetahGPT. All rights reserved.</p>
     </div>
 </footer>
 </div>
