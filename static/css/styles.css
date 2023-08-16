@@ -178,7 +178,10 @@ p, a, li, span {
     font-size: 36px;
     font-weight: 600;
     color: #FAE059;
-    margin-bottom: 20px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: 85px;
+    margin-left: 85px;
 }
 
 .how-container p {
