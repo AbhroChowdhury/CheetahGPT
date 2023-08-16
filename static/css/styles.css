@@ -190,3 +190,28 @@ p, a, li, span {
     color: white;
     font-weight: bold;
 }
+
+.visuals-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(200, 200, 200, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.visuals-title {
+    font-size: 36px;
+    font-weight: 600;
+    color:#FFF4A3;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: 85px;
+    margin-left: 85px;
+}
+
+.visuals-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
