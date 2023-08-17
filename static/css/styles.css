@@ -61,6 +61,27 @@ body {
     animation-duration: 20s;
 }
 
+.redditbg {
+    animation: slide 20s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #ED5837 50%, #FF8265 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.redditbg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+}
+
+.redditbg3 {
+    animation-duration: 20s;
+}
+
 /* Update the existing animated background styles 
 .animated-background {
     top: 0;
@@ -169,15 +190,19 @@ h1 {
     color: #525FE1;
 }
 
+h2 {
+    color:#F86F03;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
 h3 {
     color:#F86F03;
-    font-style: italic;
     font-size: 15px;
 }
 
 h5 {
     color:#F86F03;
-    font-style: italic;
 }
 
 h4 {
@@ -339,6 +364,36 @@ p, a, li, span {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.reddithow-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #FFF6F4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.reddithow-container h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-right: 85px;
+    margin-left: 85px;
+}
+
+.reddithow-container p {
+    font-size: 17px;
+}
+
+.redditfeature-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #F2F3FF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
 
 .white-link {
     color: white !important;
