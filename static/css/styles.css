@@ -82,6 +82,48 @@ body {
     animation-duration: 20s;
 }
 
+.youtubebg {
+    animation: slide 20s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #FB3569 50%, #8861F8 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.youtubebg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+}
+
+.youtubebg3 {
+    animation-duration: 20s;
+}
+
+.wikibg {
+    animation: slide 20s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #7FDBDA 50%, #ADE498 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.wikibg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+}
+
+.wikibg3 {
+    animation-duration: 20s;
+}
+
 /* Update the existing animated background styles 
 .animated-background {
     top: 0;
@@ -385,7 +427,7 @@ p, a, li, span {
     font-size: 17px;
 }
 
-.redditfeature-container {
+.inputfeature-container {
     margin-top: 40px;
     padding: 20px;
     background-color: #F2F3FF;
@@ -393,6 +435,47 @@ p, a, li, span {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+
+.youtubehow-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #FFF6F4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.youtubehow-container h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-right: 85px;
+    margin-left: 85px;
+}
+
+.youtubehow-container p {
+    font-size: 17px;
+}
+
+
+.wikihow-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #FFF6F4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.wikihow-container h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-right: 85px;
+    margin-left: 85px;
+}
+
+.wikihow-container p {
+    font-size: 17px;
+}
 
 
 .white-link {
