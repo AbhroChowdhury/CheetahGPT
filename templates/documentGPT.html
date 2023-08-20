@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document-GPT</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+
+    <div class="docbg"></div>
+    <div class="docbg bg2"></div>
+    <div class="docbg bg3"></div>
+
+<div class="main-content">
+<body class="animated-background">
+    <div class="animated-background">
+        <div class="background-blur"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='images/CheetahGPT-logos_white.png') }}" alt="CheetahGPT" class="img-fluid">
+        </a>        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('redditGPT') }}">Reddit-GPT</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('youtubeGPT') }}">Youtube-GPT</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('wikipediaGPT') }}">Wiki-GPT</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('csvGPT') }}">CSV-GPT</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('documentGPT') }}">Document-GPT</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('index') }}">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container dochow-container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h1 class="visuals-title">Document-GPT</h1>
+                <h5>Instructions on Usage</h5>
+            </div>
+            <div class="col-md-6 text-center">
+                <p> 1.) Begin by selecting a subreddit; this step is essential to refine your search.
+                    Ensure accurate spelling, excluding the "r/" prefix. For instance, to query the r/uAlberta subreddit, input "uAlberta".
+                </p>
+                <p>
+                    2.) Next, choose 2 keywords to further refine the search. Reddit-GPT will look through all the posts within the chosen subreddit
+                    that contain these keywords. It will add these to its knowledge base, allowing you to ask specific questions.
+                </p>
+                <p>
+                    3.) You're now prepared to ask your question! The key lies in your query's clarity; Precise enough to match the subreddit's context, yet open-ended for effective AI processing. 
+                    For example, "what laptops do uAlberta engineering students seem to recommend?" is a good question.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container inputfeature-container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Video Link</span>
+                    <input type="text" class="form-control" placeholder="Please put the full link starting with https://www..." aria-label="Username" aria-describedby="basic-addon1">
+                  </div>                  
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Enter your question here</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter a descriptive and clear question. Check out the guide below for inspiration" rows="3"></textarea>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <h3>&copy; 2023 CheetahGPT. All rights reserved.</h3>
+            <ul class="social-icons">
+                <li><a href="https://github.com/AbhroChowdhury/CheetahGPT" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/abhro-chowdhury/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCYULXMQNQEvoHfoNxSc6LWA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+</div>
+
+</html>

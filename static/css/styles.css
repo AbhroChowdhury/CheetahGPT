@@ -124,6 +124,48 @@ body {
     animation-duration: 20s;
 }
 
+.csvbg {
+    animation: slide 20s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #F94C10 50%, #F8DE22 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.csvbg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+}
+
+.csvbg3 {
+    animation-duration: 20s;
+}
+
+.docbg {
+    animation: slide 20s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #0B666A 50%, #35A29F 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.docbg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+}
+
+.docbg3 {
+    animation-duration: 20s;
+}
+
 /* Update the existing animated background styles 
 .animated-background {
     top: 0;
@@ -474,6 +516,46 @@ p, a, li, span {
 }
 
 .wikihow-container p {
+    font-size: 17px;
+}
+
+.csvhow-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #FFF6F4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.csvhow-container h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-right: 85px;
+    margin-left: 85px;
+}
+
+.csvhow-container p {
+    font-size: 17px;
+}
+
+.dochow-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #FFF6F4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.dochow-container h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-right: 85px;
+    margin-left: 85px;
+}
+
+.dochow-container p {
     font-size: 17px;
 }
 
