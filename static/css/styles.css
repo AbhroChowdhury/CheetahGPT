@@ -609,3 +609,13 @@ p, a, li, span {
 .social-icons a:hover {
     color: #FFA57B;
 }
+
+
+#fileInput {
+    width: 100%; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ced4da; 
+    padding: 0.375rem 0.75rem; 
+    border-radius: 0.25rem; 
+    color: #000; 
+}

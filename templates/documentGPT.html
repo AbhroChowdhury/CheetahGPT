@@ -78,17 +78,22 @@
     <div class="container inputfeature-container">
         <div class="row">
             <div class="col-md-6 text-center">
-
-            </div>
+                <h5>CheetahGPT Response:</h5>
+                <textarea id="generatedTextdocument" class="form-control" rows="10" readonly></textarea>
+            </div>  
             <div class="col-md-6 text-center">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Video Link</span>
-                    <input type="text" class="form-control" placeholder="Please put the full link starting with https://www..." aria-label="Username" aria-describedby="basic-addon1">
-                  </div>                  
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Enter your question here</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter a descriptive and clear question. Check out the guide below for inspiration" rows="3"></textarea>
-                  </div>
+                <div class="fileupload">
+                    <label class="custom-file-upload btn btn-light">
+                        <input type="file" class="visually-hidden" id="fileInput" accept=".txt, .doc, .docx, .pdf">
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="documentquestion" class="form-label">Enter your question here</label>
+                    <textarea class="form-control" id="documentquestion" placeholder="Enter a descriptive and clear question. Check out the guide below for inspiration" rows="3"></textarea>
+                </div>
+                <div class="submitdocument">
+                    <button type="button" class="btn btn-outline-danger">Submit</button>
+                </div>
             </div>
         </div>
     </div>
