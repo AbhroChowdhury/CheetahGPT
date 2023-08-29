@@ -106,6 +106,47 @@
     </div>
 
 
+    <script>
+        // Function to handle form submission
+        function handleSubmit() {
+            // Collect form data
+            const subreddit = document.getElementById("nameofsubreddit").value;
+            const keyword1 = document.getElementById("keyword1").value;
+            const keyword2 = document.getElementById("keyword2").value;
+            const question = document.getElementById("redditquestion").value;
+    
+            // Create an object to send as JSON data
+            const requestData = {
+                subreddit: subreddit,
+                keywords: [keyword1, keyword2],
+                question: question
+            };
+    
+            // Send AJAX request to Flask backend
+            fetch("/redditGPT", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(requestData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update the textarea with the GPT response
+                const generatedText = document.getElementById("generatedTexreddit");
+                generatedText.value = data.gpt_response;
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+        }
+    
+        // Add event listener to the submit button
+        const submitButton = document.querySelector(".submitreddit button");
+        submitButton.addEventListener("click", handleSubmit);
+    </script>
+
+
 
 
 
