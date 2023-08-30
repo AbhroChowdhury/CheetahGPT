@@ -252,6 +252,21 @@ body {
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.custom-container h5 {
+    font-size: 18px;
+    text-align: center; 
+    margin: 0 auto; 
 }
 
 .navbar-brand img {
@@ -290,7 +305,7 @@ h5 {
 }
 
 h4 {
-    color:#F86F03;
+    color:#000000;
     font-weight:bolder;
 }
 
@@ -328,6 +343,9 @@ p, a, li, span {
     cursor: pointer; 
     transition: background-color 0.3s; 
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .main-summary-container:hover {
@@ -339,7 +357,6 @@ p, a, li, span {
     margin-bottom: 20px;
     display:none;
 }
-
 
 
 .card-group {
@@ -380,6 +397,9 @@ p, a, li, span {
     cursor: pointer; 
     transition: background-color 0.3s; 
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .how-summary-container:hover {
@@ -422,14 +442,7 @@ p, a, li, span {
     display: none;
 }
 
-.visuals-title {
-    font-size: 36px;
-    font-weight: 600;
-    color:#525FE1;
-    margin-top: 150px;
-    margin-right: 85px;
-    margin-left: 85px;
-}
+
 
 .visuals-image {
     max-width: 100%;
@@ -447,20 +460,15 @@ p, a, li, span {
     cursor: pointer; 
     transition: background-color 0.3s; 
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .faq-summary-container:hover {
     background-color: #FFFFFF; 
 }
 
-.faq-title {
-    font-size: 36px;
-    font-weight: 600;
-    color: #525FE1;
-    margin-top: 10px; 
-    margin-right: 85px;
-    margin-left: 85px;
-}
 
 .faq-container {
     margin-top: 40px;
@@ -481,6 +489,9 @@ p, a, li, span {
     cursor: pointer; 
     transition: background-color 0.3s; 
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .learnmore-summary-container:hover {
@@ -497,14 +508,6 @@ p, a, li, span {
     display: none;
 }
 
-.learnmore-title {
-    font-size: 36px;
-    font-weight: 600;
-    color:#525FE1;
-    margin-top: 230px;
-    margin-right: 85px;
-    margin-left: 85px;
-}
 
 .learnmore-image {
     max-width: 100%;
