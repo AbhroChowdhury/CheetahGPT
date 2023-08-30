@@ -552,7 +552,7 @@ p, a, li, span {
 .inputfeature-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #E8E8E8;
+    background-color: #F3F3F3;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -712,7 +712,7 @@ p, a, li, span {
     transform: translate(-50%, -50%);
   }
 
-  .spinner {
+.spinner {
     width: 40px;
     height: 40px;
     margin: 0 auto;
@@ -720,10 +720,33 @@ p, a, li, span {
     border-top: 4px solid #ffffff;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.inputThings {
+    margin-bottom: 40px;
+}
+
+.GPTResponse {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loading-spinner .spinner {
+    border-top-color: red; 
+    margin-bottom: 60px;
+}
+
+textarea {
+    background-color: #FFFFFF; 
+    color: #000000; 
+    border: 1px solid #CCC;
+    border-radius: 5px; 
+    padding: 10px; 
+    width: 100%; 
+    height: 400px;
   }
-  
