@@ -388,6 +388,11 @@ p, a, li, span {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
+.doc-summary-container,
+.csv-summary-container,
+.wiki-summary-container,
+.youtube-summary-container,
+.reddit-summary-container,
 .how-summary-container {
     margin-top: 40px;
     padding: 20px;
@@ -402,6 +407,11 @@ p, a, li, span {
     align-items: center; 
 }
 
+.doc-summary-container:hover,
+.csv-summary-container:hover,
+.wiki-summary-container:hover,
+.youtube-summary-container:hover,
+.reddit-summary-container:hover,
 .how-summary-container:hover {
     background-color: #FFFFFF; 
 }
@@ -516,12 +526,15 @@ p, a, li, span {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .reddithow-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #E8E8E8;
+    /* background-color: #E8E8E8; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
+    display: none;
 }
 
 .reddithow-container h1 {
@@ -551,6 +564,7 @@ p, a, li, span {
     background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: none;
 }
 
 .youtubehow-container h1 {
@@ -572,6 +586,7 @@ p, a, li, span {
     background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: none;
 }
 
 .wikihow-container h1 {
@@ -592,6 +607,7 @@ p, a, li, span {
     background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: none;
 }
 
 .csvhow-container h1 {
@@ -612,6 +628,7 @@ p, a, li, span {
     background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: none;
 }
 
 .dochow-container h1 {

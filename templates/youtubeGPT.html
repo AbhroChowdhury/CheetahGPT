@@ -52,7 +52,14 @@
         </div>
     </nav>
 
-    <div class="container youtubehow-container">
+
+    <div id="youtubeSummary" class="container youtube-summary-container">
+        <div class="how-title">
+            <h4>Youtube-GPT Instructions</h4>
+        </div>
+    </div>
+
+    <div id="youtubeDetails" class="container youtubehow-container">
         <div class="row">
             <div class="col-md-6 text-center">
                 <h1 class="visuals-title">Youtube-GPT</h1>
@@ -98,7 +105,21 @@
     </div>
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqSummary = document.getElementById("youtubeSummary");
+            const faqDetails = document.getElementById("youtubeDetails");
 
+            // Toggle FAQ details when summary is clicked
+            faqSummary.addEventListener("click", function () {
+                if (faqDetails.style.display === "none" || faqDetails.style.display === "") {
+                    faqDetails.style.display = "block";
+                } else {
+                    faqDetails.style.display = "none";
+                }
+            });
+        });
+    </script>
 
 
 </body>

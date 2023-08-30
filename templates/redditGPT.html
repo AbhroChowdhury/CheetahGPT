@@ -52,7 +52,14 @@
         </div>
     </nav>
 
-    <div class="container reddithow-container">
+
+    <div id="redditSummary" class="container reddit-summary-container">
+        <div class="how-title">
+            <h4>Reddit-GPT Instructions</h4>
+        </div>
+    </div>
+
+    <div id="redditDetails" class="container reddithow-container">
         <div class="row">
             <div class="col-md-6 text-center">
                 <h1 class="visuals-title">Reddit-GPT</h1>
@@ -157,6 +164,21 @@
         // Add event listener to the submit button
         const submitButton = document.querySelector(".submitreddit button");
         submitButton.addEventListener("click", handleSubmit);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqSummary = document.getElementById("redditSummary");
+            const faqDetails = document.getElementById("redditDetails");
+
+            // Toggle FAQ details when summary is clicked
+            faqSummary.addEventListener("click", function () {
+                if (faqDetails.style.display === "none" || faqDetails.style.display === "") {
+                    faqDetails.style.display = "block";
+                } else {
+                    faqDetails.style.display = "none";
+                }
+            });
+        });
+
     </script>
     
 

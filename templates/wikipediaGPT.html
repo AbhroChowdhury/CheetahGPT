@@ -52,7 +52,14 @@
         </div>
     </nav>
 
-    <div class="container wikihow-container">
+
+    <div id="wikiSummary" class="container wiki-summary-container">
+        <div class="how-title">
+            <h4>Wiki-GPT Instructions</h4>
+        </div>
+    </div>
+
+    <div id="wikiDetails" class="container wikihow-container">
         <div class="row">
             <div class="col-md-6 text-center">
                 <h1 class="visuals-title">Wiki-GPT</h1>
@@ -97,7 +104,21 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqSummary = document.getElementById("wikiSummary");
+            const faqDetails = document.getElementById("wikiDetails");
 
+            // Toggle FAQ details when summary is clicked
+            faqSummary.addEventListener("click", function () {
+                if (faqDetails.style.display === "none" || faqDetails.style.display === "") {
+                    faqDetails.style.display = "block";
+                } else {
+                    faqDetails.style.display = "none";
+                }
+            });
+        });
+    </script>
 
 
 
