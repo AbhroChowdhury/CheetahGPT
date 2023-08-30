@@ -322,16 +322,16 @@ p, a, li, span {
 .main-summary-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #E8E8E8;
+    /* background-color: #E8E8E8; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
     cursor: pointer; 
     transition: background-color 0.3s; 
     margin-bottom: 40px;
 }
 
 .main-summary-container:hover {
-    background-color: #D0D0D0; 
+    background-color: #FFFFFF; 
 }
 
 .main-container {
@@ -374,16 +374,16 @@ p, a, li, span {
 .how-summary-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #E8E8E8;
+   /* background-color: #E8E8E8; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
     cursor: pointer; 
     transition: background-color 0.3s; 
     margin-bottom: 40px;
 }
 
 .how-summary-container:hover {
-    background-color: #D0D0D0; 
+    background-color: #FFFFFF; 
 }
 
 .how-container {
@@ -441,16 +441,16 @@ p, a, li, span {
 .faq-summary-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #E8E8E8;
+    /* background-color: #E8E8E8; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
     cursor: pointer; 
     transition: background-color 0.3s; 
     margin-bottom: 40px;
 }
 
 .faq-summary-container:hover {
-    background-color: #D0D0D0; 
+    background-color: #FFFFFF; 
 }
 
 .faq-title {
@@ -475,16 +475,16 @@ p, a, li, span {
 .learnmore-summary-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #E8E8E8;
+    /* background-color: #E8E8E8; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
     cursor: pointer; 
     transition: background-color 0.3s; 
     margin-bottom: 40px;
 }
 
 .learnmore-summary-container:hover {
-    background-color: #D0D0D0; 
+    background-color: #FFFFFF; 
 }
 
 .learnmore-container {
