@@ -42,7 +42,7 @@ body {
 
 .bg {
     animation: slide 20s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #FFFFFF 50%, #FAF9F9 50%);
+    background-image: linear-gradient(-60deg, #FFFFFF 50%, #F4F4F4 50%);
     bottom: 0;
     left: -50%;
     opacity: 0.5;
@@ -247,7 +247,7 @@ body {
 
 .custom-container {
     margin-top: 75px;
-    background-color: #FFF6F4; 
+    background-color: #E8E8E8; 
     padding: 20px;
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 45px;
     font-weight: 600;
-    color: #525FE1;
+    color: #000000;
 }
 
 h2 {
@@ -286,7 +286,7 @@ h3 {
 }
 
 h5 {
-    color:#F86F03;
+    color:#676767;
 }
 
 h4 {
@@ -318,9 +318,26 @@ p, a, li, span {
     color: #F29727; 
 }
 
+
+.main-summary-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-bottom: 40px;
+}
+
+.main-summary-container:hover {
+    background-color: #D0D0D0; 
+}
+
 .main-container {
     display: flex;
     margin-bottom: 20px;
+    display:none;
 }
 
 
@@ -346,7 +363,7 @@ p, a, li, span {
     border: none; 
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    background-color: #FFF6F4;
+    background-color: #E8E8E8;
 }
 
 .card:hover {
@@ -354,14 +371,28 @@ p, a, li, span {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
+.how-summary-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-bottom: 40px;
+}
 
+.how-summary-container:hover {
+    background-color: #D0D0D0; 
+}
 
 .how-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #F2F3FF;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: none;
 }
 
 .how-container h1 {
@@ -384,10 +415,11 @@ p, a, li, span {
 .visuals-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #F2F3FF;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 40px;
+    display: none;
 }
 
 .visuals-title {
@@ -406,31 +438,63 @@ p, a, li, span {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.faq-container {
+.faq-summary-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #FFF6F4;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer; 
+    transition: background-color 0.3s; 
     margin-bottom: 40px;
+}
+
+.faq-summary-container:hover {
+    background-color: #D0D0D0; 
 }
 
 .faq-title {
     font-size: 36px;
     font-weight: 600;
-    color:#525FE1;
-    margin-top: 150px;
+    color: #525FE1;
+    margin-top: 10px; 
     margin-right: 85px;
     margin-left: 85px;
+}
+
+.faq-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    display: none;
+}
+
+.learnmore-summary-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-bottom: 40px;
+}
+
+.learnmore-summary-container:hover {
+    background-color: #D0D0D0; 
 }
 
 .learnmore-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #F2F3FF;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 40px;
+    display: none;
 }
 
 .learnmore-title {
@@ -452,7 +516,7 @@ p, a, li, span {
 .reddithow-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #FFF6F4;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -472,7 +536,7 @@ p, a, li, span {
 .inputfeature-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #F2F3FF;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -481,7 +545,7 @@ p, a, li, span {
 .youtubehow-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #FFF6F4;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -502,7 +566,7 @@ p, a, li, span {
 .wikihow-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #FFF6F4;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -522,7 +586,7 @@ p, a, li, span {
 .csvhow-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #FFF6F4;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -542,7 +606,7 @@ p, a, li, span {
 .dochow-container {
     margin-top: 40px;
     padding: 20px;
-    background-color: #FFF6F4;
+    background-color: #E8E8E8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -571,7 +635,7 @@ p, a, li, span {
 
 .footer {
     margin-top: 60px;
-    background-color: #272E72;
+    background-color: #000000;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;

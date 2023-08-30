@@ -53,7 +53,7 @@
     </nav>
 
     <div class="container custom-container">
-        <h1>Welcome to CheetahGPT</h1>
+        <h1>Introducing CheetahGPT</h1>
         <h5>CheetahGPT lets you leverage AI on a variety of structured and unstructured data sources such as YouTube, Reddit, CSV's, and more</h5>
     </div>
 
@@ -70,7 +70,13 @@
     </div>
 
 
-    <div class="container main-container">
+    <div id="mainSummary" class="container main-summary-container">
+        <div class="how-title">
+            <h4>Features</h4>
+        </div>
+    </div>
+
+    <div id="mainDetails" class="container main-container">
         <div class="card-group">
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
@@ -121,7 +127,13 @@
         </div>
     </div>
 
-    <div class="container how-container">
+    <div id="howSummary" class="container how-summary-container">
+        <div class="how-title">
+            <h4>How it works</h4>
+        </div>
+    </div>
+
+    <div id="howDetails" class="container how-container">
         <div class="row">
             <div class="col-md-6">
                 <p class="how-description">
@@ -141,7 +153,13 @@
         </div>
     </div>
 
-    <div class="container faq-container">
+    <div id="faqSummary" class="container faq-summary-container">
+        <div class="faq-title">
+            <h4>FAQ</h4>
+        </div>
+    </div>
+
+    <div id="faqDetails" class="container faq-container">
         <nav id="navbarfaq" class="navbar bg-body-tertiary px-3 mb-3">
             <h4 style="margin-top: 6px;">FAQ</h4>
           </nav>
@@ -172,8 +190,13 @@
           </div>
     </div>
     
+    <div id="learnmoreSummary" class="container learnmore-summary-container">
+        <div class="how-title">
+            <h4>Contact us</h4>
+        </div>
+    </div>
 
-    <div class="container learnmore-container">
+    <div id="learnmoreDetails" class="container learnmore-container">
         <div class="row">
             <div class="col-md-6 text-center">
                 <h1 class="learnmore-title">Want to learn more?</h1>
@@ -186,6 +209,65 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqSummary = document.getElementById("faqSummary");
+            const faqDetails = document.getElementById("faqDetails");
+
+            // Toggle FAQ details when summary is clicked
+            faqSummary.addEventListener("click", function () {
+                if (faqDetails.style.display === "none" || faqDetails.style.display === "") {
+                    faqDetails.style.display = "block";
+                } else {
+                    faqDetails.style.display = "none";
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqSummary = document.getElementById("howSummary");
+            const faqDetails = document.getElementById("howDetails");
+
+            // Toggle FAQ details when summary is clicked
+            faqSummary.addEventListener("click", function () {
+                if (faqDetails.style.display === "none" || faqDetails.style.display === "") {
+                    faqDetails.style.display = "block";
+                } else {
+                    faqDetails.style.display = "none";
+                }
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqSummary = document.getElementById("mainSummary");
+            const faqDetails = document.getElementById("mainDetails");
+
+            // Toggle FAQ details when summary is clicked
+            faqSummary.addEventListener("click", function () {
+                if (faqDetails.style.display === "none" || faqDetails.style.display === "") {
+                    faqDetails.style.display = "block";
+                } else {
+                    faqDetails.style.display = "none";
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqSummary = document.getElementById("learnmoreSummary");
+            const faqDetails = document.getElementById("learnmoreDetails");
+
+            // Toggle FAQ details when summary is clicked
+            faqSummary.addEventListener("click", function () {
+                if (faqDetails.style.display === "none" || faqDetails.style.display === "") {
+                    faqDetails.style.display = "block";
+                } else {
+                    faqDetails.style.display = "none";
+                }
+            });
+        });
+
+    </script>
 
 
 </body>
