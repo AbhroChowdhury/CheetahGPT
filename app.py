@@ -56,7 +56,7 @@ def process_reddit_request():
     print("GPT Response:", response)
 
     response_data = {
-        "gpt_response": response.response  # Access the response text
+        "gpt_response": response.response  # Access the response text, (need .response to do this)
     }
 
     return jsonify(response_data)
