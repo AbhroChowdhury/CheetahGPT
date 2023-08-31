@@ -312,7 +312,7 @@ h4 {
 p, a, li, span {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    color: #272E72;
+    color: #676767;
 }
 
 
@@ -388,6 +388,7 @@ p, a, li, span {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
+.redditTips-summary-container,
 .doc-summary-container,
 .csv-summary-container,
 .wiki-summary-container,
@@ -395,6 +396,7 @@ p, a, li, span {
 .reddit-summary-container,
 .how-summary-container {
     margin-top: 40px;
+    margin-bottom: 20px;
     padding: 20px;
    /* background-color: #E8E8E8; */
     border-radius: 10px;
@@ -407,6 +409,7 @@ p, a, li, span {
     align-items: center; 
 }
 
+.redditTips-summary-container:hover,
 .doc-summary-container:hover,
 .csv-summary-container:hover,
 .wiki-summary-container:hover,
@@ -527,11 +530,20 @@ p, a, li, span {
 }
 
 
-
 .reddithow-container {
     margin-top: 40px;
     padding: 20px;
     /* background-color: #E8E8E8; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
+    display: none;
+}
+
+
+.redditdetails-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #F3F3F3; 
     border-radius: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
     display: none;
@@ -549,8 +561,13 @@ p, a, li, span {
     font-size: 17px;
 }
 
+.reddit-image {
+    max-width: 300px; 
+    height: auto;
+}
+
 .inputfeature-container {
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 20px;
     background-color: #F3F3F3;
     border-radius: 10px;
@@ -750,3 +767,20 @@ textarea {
     width: 100%; 
     height: 400px;
   }
+
+  .accordion-button {
+    background-color: #E8E8E8; 
+    color: #000000; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: medium;
+    transition: background-color 0.3s, border 0.3s, color 0.3s; 
+    
+}
+
+.accordion-button:hover {
+    background-color: #FFFFFF; 
+    color: #E8E8E8; 
+    border-color: #ccc; 
+}

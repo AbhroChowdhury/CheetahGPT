@@ -63,59 +63,74 @@
     <div id="redditDetails" class="container reddithow-container">
         <div class="row">
             <div class="col-md-6 text-center">
-                <h1 class="visuals-title">Reddit-GPT</h1>
-                <h5>Instructions on Usage</h5>
+                <img src="{{ url_for('static', filename='images/reddit4.png') }}" alt="CheetahGPT" class="img-fluid reddit-image">
             </div>
             <div class="col-md-6 text-center">
-                <p> 1.) Begin by selecting a subreddit; this step is essential to refine your search.
+                <p> 1.) Pick a subreddit
                     Ensure accurate spelling, excluding the "r/" prefix. For instance, to query the r/uAlberta subreddit, input "uAlberta".
                 </p>
                 <p>
                     2.) Next, choose 2 keywords to further refine the search. Reddit-GPT will look through all the posts within the chosen subreddit
-                    that contain these keywords. It will add these to its knowledge base, allowing you to ask specific questions.
+                    that contain these keywords.
                 </p>
                 <p>
-                    3.) You're now prepared to ask your question! The key lies in your query's clarity; Precise enough to match the subreddit's context, yet open-ended for effective AI processing. 
-                    For example, "what laptops do uAlberta engineering students seem to recommend?" is a good question.
+                    3.) You're now prepared to ask your question! .
                 </p>
             </div>
         </div>
     </div>
 
-<!--
-    <div class="container inputfeature-container">
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <h5>CheetahGPT Response:</h5>
-                <div id="loadingSpinner" class="loading-spinner">
-                    <div class="spinner"></div>
-                  </div>
-                <textarea id="generatedTexreddit" class="form-control" rows="12" readonly></textarea>
-            </div>            
-            <div class="col-md-6 text-center">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">r/</span>
-                    <input type="text" class="form-control" id="nameofsubreddit" placeholder="Name Of Subreddit" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>                  
-                  <div class="mb-3">
-                    <label for="keyword1" class="form-label">Enter a keyword</label>
-                    <input type="text" class="form-control" id="keyword1" placeholder="Enter a keyword to filter through posts">
-                  </div>
-                  <div class="mb-3">
-                    <label for="keyword2" class="form-label">Enter another keyword</label>
-                    <input type="text" class="form-control" id="keyword2" placeholder="Enter another keyword to further filter through posts">
-                  </div>
-                  <div class="mb-3">
-                    <label for="redditquestion" class="form-label">Enter your question here</label>
-                    <textarea class="form-control" id="redditquestion" placeholder="Enter a descriptive and clear question. Check out the guide below for inspiration" rows="3"></textarea>
-                  </div>
-                  <div class="submitreddit">
-                    <button type="button" class="btn btn-outline-danger">Submit</button>
-                </div>
-            </div>
+
+    <div id="redditTipsSummary" class="container redditTips-summary-container">
+        <div class="how-title">
+            <h4>Reddit-GPT tips</h4>
         </div>
     </div>
--->
+
+    
+    <div id="redditTipsDetails" class="container redditdetails-container">
+        
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
 
     <div class="container inputfeature-container">
   
@@ -150,7 +165,6 @@
         </div>          
 
     </div>
-
 
 
     <script>
@@ -205,6 +219,20 @@
         document.addEventListener("DOMContentLoaded", function () {
             const faqSummary = document.getElementById("redditSummary");
             const faqDetails = document.getElementById("redditDetails");
+
+            // Toggle FAQ details when summary is clicked
+            faqSummary.addEventListener("click", function () {
+                if (faqDetails.style.display === "none" || faqDetails.style.display === "") {
+                    faqDetails.style.display = "block";
+                } else {
+                    faqDetails.style.display = "none";
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqSummary = document.getElementById("redditTipsSummary");
+            const faqDetails = document.getElementById("redditTipsDetails");
 
             // Toggle FAQ details when summary is clicked
             faqSummary.addEventListener("click", function () {
