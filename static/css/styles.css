@@ -784,3 +784,7 @@ textarea {
     color: #E8E8E8; 
     border-color: #ccc; 
 }
+
+.accordion-body {
+    margin-bottom: 20px;
+}
